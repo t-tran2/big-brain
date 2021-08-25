@@ -1,0 +1,45 @@
+<html>
+    <header> 
+        <Title>Dream on</Title>
+        <link href="honda.css" rel="stylesheet" type-"text/css" />
+    </header>
+    
+<div class="hero-image">
+    <div class="hero-text">
+      <h1>The Power of Dreams</h1>
+      <p></p>
+      <a href="top10.html" class="button">Explore</a>
+
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Where to?</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="link1.html">StarBucks</a>
+          <a href="link2.html">Chipotle</a>
+          <a href="link3.html">Maskadores Taco </a>
+        </div>
+      </div> 
+    </div>
+  </div> 
+  <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+} 
+</script>
+
+</html>
